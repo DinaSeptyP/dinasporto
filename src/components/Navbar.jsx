@@ -52,6 +52,10 @@ const Navbar = () => {
     }
   }, [location]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className={`navbar flex items-center justify-between py-7 md:sticky md:top-0 z-50 rounded-4xl px-4 md:px-0 transition-all duration-300`}
