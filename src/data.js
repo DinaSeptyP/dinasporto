@@ -326,7 +326,7 @@ export const listProyek = [
   },
 ];
 
-export const timelineItems = [
+export const timelineExperience = [
   {
     side: "left",
     title: "Universitas Jember",
@@ -335,6 +335,7 @@ export const timelineItems = [
     skill: [
       "Algorithms and Programming I, Database System, Object Oriented Programming, UI/UX Design, Web Based Programming, Software Analysis and Design, Mobile Based Programming, Human Computer Interaction, Internship",
     ],
+    dad: "100",
   },
   {
     side: "right",
@@ -344,6 +345,7 @@ export const timelineItems = [
     skill: [
       "Frontend Development, UI/UX Design, Project Management, Teamwork, Communication, Problem Solving, Critical Thinking, Time Management",
     ],
+    dad: "200",
   },
   {
     side: "left",
@@ -353,6 +355,7 @@ export const timelineItems = [
     skill: [
       "Fullstack Web Development, Frontend Development, Backend Development, Database, Deployment, Project Management, Teamwork, Data Analytics",
     ],
+    dad: "300",
   },
   {
     side: "right",
@@ -362,5 +365,6 @@ export const timelineItems = [
     skill: [
       "Database, SQL, MySQL, PostgreSQL, Teamwork, Communication, Problem Solving, Critical Thinking, Time Management",
     ],
+    dad: "400",
   },
 ];

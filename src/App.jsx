@@ -1,6 +1,6 @@
 import DataImage, { listProyek } from "./data";
 import { listTools } from "./data";
-import { timelineItems } from "./data";
+import { timelineExperience } from "./data";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProjectDetail from "./pages/ProjectDetail";
@@ -14,7 +14,7 @@ function Home() {
         className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 sm:gap-10 gap-6 grid-cols-1"
         id="home"
       >
-        <div>
+        <div className="animate__animated animate__fadeInLeft animate__delay-1s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img
               src={DataImage.HeroImage}
@@ -53,13 +53,18 @@ function Home() {
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          className="w-[500px] md:ml-auto"
+          className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-2s"
         />
       </div>
 
       {/* ABOUT */}
       <div className="about mt-32 py-10" id="about"></div>
-      <div className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg">
+      <div
+        className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg"
+        data-aos="fadeInUp"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <img
           src={DataImage.HeroImage}
           alt="About Image"
@@ -97,20 +102,39 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full max-w-4xl mx-auto py-12 relative">
+      <div
+        className="w-full max-w-4xl mx-auto py-12 relative"
+        data-aos="fadeInUp"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-once="true"
+      >
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
 
         <div className="space-y-12">
-          {timelineItems.map((item, index) => (
-            <div key={index} className={`flex items-center w-full`}>
-              {item.side === "left" ? (
+          {timelineExperience.map((experience, index) => (
+            <div
+              key={index}
+              className={`flex items-center w-full`}
+              data-aos="fadeInUp"
+              data-aos-duration="1000"
+              data-aos-delay={experience.dad}
+              data-aos-once="true"
+            >
+              {experience.side === "left" ? (
                 <>
                   <div className="w-1/2 pr-6 text-right">
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <p className="text-sm text-gray-200">{item.subtitle}</p>
-                    <span className="text-sm text-gray-400">{item.date}</span>
-                    <p className="mt-1 text-xs text-gray-300">{item.skill}</p>
+                    <h3 className="font-semibold">{experience.title}</h3>
+                    <p className="text-sm text-gray-200">
+                      {experience.subtitle}
+                    </p>
+                    <span className="text-sm text-gray-400">
+                      {experience.date}
+                    </span>
+                    <p className="mt-1 text-xs text-gray-300">
+                      {experience.skill}
+                    </p>
                   </div>
                   <div className="w-1/2"></div>
                 </>
@@ -118,10 +142,16 @@ function Home() {
                 <>
                   <div className="w-1/2"></div>
                   <div className="w-1/2 pl-6 text-left">
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <p className="text-sm text-gray-200">{item.subtitle}</p>
-                    <span className="text-sm text-gray-400">{item.date}</span>
-                    <p className="mt-1 text-xs text-gray-300">{item.skill}</p>
+                    <h3 className="font-semibold">{experience.title}</h3>
+                    <p className="text-sm text-gray-200">
+                      {experience.subtitle}
+                    </p>
+                    <span className="text-sm text-gray-400">
+                      {experience.date}
+                    </span>
+                    <p className="mt-1 text-xs text-gray-300">
+                      {experience.skill}
+                    </p>
                   </div>
                 </>
               )}
@@ -133,16 +163,38 @@ function Home() {
       {/* TOOLS */}
 
       <div className="tools mt-32" id="tool">
-        <h1 className="text-4xl/snug font-bold mb-4">Tools that I use</h1>
-        <p className="opacity-70 text-base/loose">
+        <h1
+          className="text-4xl/snug font-bold mb-4"
+          data-aos="fadeInUp"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Tools that I use
+        </h1>
+        <p
+          className="opacity-70 text-base/loose"
+          data-aos="fadeInUp"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
           perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
         </p>
-        <div className="tools-box mt-14 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
+        <div
+          className="tools-box mt-14 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4"
+          data-aos="fadeInUp"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           {listTools.map((tool) => (
             <div
               key={tool.id}
               className="group flex items-center gap-4 p-4 rounded-md border border-zinc-600 hover:bg-zinc-800 cursor-pointer"
+              data-aos="fadeInUp"
+              data-aos-duration="1000"
+              data-aos-delay={tool.dad}
+              data-aos-once="true"
             >
               <img
                 src={tool.gambar}
@@ -151,7 +203,7 @@ function Home() {
               ></img>
               <div>
                 <h4>{tool.nama}</h4>
-                <p>{tool.desk}</p>
+                <p className="text-xs">{tool.ket}</p>
               </div>
             </div>
           ))}
@@ -163,8 +215,22 @@ function Home() {
       <div className="projects mt-32" id="project"></div>
       <div className="flex items-center justify-between mb-10">
         <div>
-          <h1 className="text-4xl/snug font-bold mb-4">My Projects</h1>
-          <p className="w-2/3 opacity-70 text-base/loose">
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            My Projects
+          </h1>
+          <p
+            className="w-2/3 opacity-70 text-base/loose"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
           </p>
@@ -173,6 +239,10 @@ function Home() {
           href="https://github.com/DinaSeptyP"
           target="_blank"
           className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
+          data-aos="fadeInUp"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-once="true"
         >
           Github Page
         </a>
@@ -183,6 +253,10 @@ function Home() {
           <div
             key={proyek.id}
             className="group rounded-lg overflow-hidden border border-zinc-600 hover:shadow-lg cursor-pointer pb-5"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay={proyek.dad}
+            data-aos-once="true"
           >
             <img
               src={proyek.gambar}
@@ -251,10 +325,31 @@ function Home() {
       </div>
 
       {/* CONTACT */}
-      <div className="contact mt-32 mb-10" id="contact">
+      <div
+        className="contact mt-32 mb-10"
+        id="contact"
+        data-aos="fadeInUp"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
         <div className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg">
-          <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
-          <p className="mb-6 opacity-70 text-base/loose">
+          <h1
+            className="text-3xl font-bold mb-6"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            Contact Me
+          </h1>
+          <p
+            className="mb-6 opacity-70 text-base/loose"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
             doloribus, facere iure velit praesentium nesciunt reiciendis qui,
@@ -266,6 +361,10 @@ function Home() {
             action="https://formsubmit.co/dinaseptypuspayani87@gmail.com"
             method="POST"
             className="grid lg:grid-cols-2 grid-cols-1 gap-6 text-zinc-100"
+            data-aos="fadeInUp"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-once="true"
           >
             <input
               type="text"

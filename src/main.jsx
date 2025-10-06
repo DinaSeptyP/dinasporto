@@ -5,6 +5,12 @@ import App from "./App.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { BrowserRouter } from "react-router-dom";
 
+import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
