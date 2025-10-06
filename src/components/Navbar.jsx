@@ -45,12 +45,12 @@ const Navbar = () => {
   return (
     <div className="navbar flex items-center justify-between py-7">
       <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white fixed md:static rounded-lg shadow-lg md:shadow-none">
+        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white md:static rounded-lg shadow-lg md:shadow-none">
           Dina
         </h1>
       </div>
       <ul
-        className={`menu flex sm:gap-10 gap-4 items-center fixed md:static left-1/2 -translate-x-1/2 md:translate-x-0 md:opacity-100 md:top-0 rounded-lg shadow-lg bg-white/30 backdrop-blur-xl p-4 rounded-br-2xl ${
+        className={`menu flex sm:gap-10 gap-4 items-center fixed md:static left-1/2 -translate-x-1/2 md:translate-x-0 md:opacity-100 md:top-0 rounded-lg shadow-lg bg-white/30 backdrop-blur-xl p-4 rounded-br-2xl z-100 ${
           active ? "top-0 opacity-100" : "-top-10 opacity-0"
         } transition-all duration-300 md:bg-transparent`}
       >

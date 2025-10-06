@@ -1,28 +1,12 @@
 import DataImage, { listProyek } from "./data";
 import { listTools } from "./data";
 import { timelineExperience } from "./data";
-import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProjectDetail from "./pages/ProjectDetail";
 import Footer from "./components/Footer";
 
 function Home() {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, [location.pathname]);
-
   return (
     <>
       {/* HERO */}
@@ -38,18 +22,20 @@ function Home() {
               className="w-10 rounded-md"
               id="Home"
             ></img>
-            <q>Lorem ipsum dolor sit amet consectetur👌</q>
+            <q>Let’s build websites that spark a little joy😻</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
-            Haii, Lorem Ipsum Dina
+            Curiosity leads, code follows — Hii, I’m Dina!!
           </h1>
           <p className="mb-6 opacity-70 text-base/loose">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
-            doloribus, facere iure velit praesentium nesciunt reiciendis qui,
-            tempore maxime facilis? Repellat tempore asperiores possimus omnis
-            autem mollitia sequi quisquam nisi? Totam debitis quas non minus
-            obcaecati molestias. Nobis blanditiis commodi mollitia voluptatibus?
+            I’m a Frontend Developer who takes on Full Stack work from time to
+            time when needed. I care deeply about how people feel when they use
+            a website, such as smooth flow, clear visuals, and little details
+            that make everything just work. I love learning new tools,
+            experimenting with fresh ideas, and sometimes spending too long
+            tweaking pixels until they feel right. When I’m not coding, you’ll
+            probably find me playing with cats, stargazing, watching movies or
+            cat memes, or getting lost in a good playlist. 🎧🎸✨
           </p>
           <div className="flex gap-4 items-center">
             <a
@@ -88,12 +74,13 @@ function Home() {
         />
         <h1 className="text-3xl font-bold mb-6">About Me</h1>
         <p className="mb-6 opacity-70 text-base/loose">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
-          doloribus, facere iure velit praesentium nesciunt reiciendis qui,
-          tempore maxime facilis? Repellat tempore asperiores possimus omnis
-          autem mollitia sequi quisquam nisi? Totam debitis quas non minus
-          obcaecati molestias. Nobis blanditiis commodi mollitia voluptatibus?
+          Hi! I’m Dina Septy Puspayani, a web developer and tech enthusiast from
+          Indonesia. I love building things that look good and feel good to use
+          like clean layouts, intuitive flow, and just the right amount of
+          polish. I care about the small details that make a website easier to
+          navigate and more enjoyable to explore. I also love exploring new
+          ideas and learning along the way. To me, good design and good code go
+          hand in hand, both tell a story about how something feels to use.
         </p>
         <div className="flex items-center justify-between">
           <img
@@ -104,15 +91,15 @@ function Home() {
           <div className="flex items-center gap-6">
             <div>
               <h1 className="text-3xl font-bold mb-1">
-                45<span className="text-blue-500">+</span>
+                20<span className="text-blue-500">+</span>
               </h1>
-              <p>Proyek selesai</p>
+              <p>Projects built</p>
             </div>
             <div>
               <h1 className="text-3xl font-bold mb-1">
-                45<span className="text-blue-500">+</span>
+                10<span className="text-blue-500">+</span>
               </h1>
-              <p>Proyek selesai</p>
+              <p>Team Collaborations</p>
             </div>
           </div>
         </div>
@@ -194,8 +181,8 @@ function Home() {
           data-aos-delay="200"
           data-aos-once="true"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
+          These are the tools I rely on to bring ideas to life from sketch to
+          screen.
         </p>
         <div
           className="tools-box mt-14 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4"
@@ -247,14 +234,15 @@ function Home() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
+            Every project teaches me something new about design, logic, or just
+            how people use the web. Here are some of the projects I’ve poured my
+            time (and a few playlists) into🎧
           </p>
         </div>
         <a
           href="https://github.com/DinaSeptyP"
           target="_blank"
-          className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
+          className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-sm/loose w-2/7 md:w-1/7 text-center md:text-md"
           data-aos="fadeInUp"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -332,7 +320,7 @@ function Home() {
                   to={`/projects/${proyek.id}`}
                   className="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600"
                 >
-                  Lihat Proyek
+                  Project Detail
                 </Link>
               </div>
             </div>
@@ -366,12 +354,9 @@ function Home() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            perspiciatis labore iusto fugit debitis, fugiat deleniti temporibus
-            doloribus, facere iure velit praesentium nesciunt reiciendis qui,
-            tempore maxime facilis? Repellat tempore asperiores possimus omnis
-            autem mollitia sequi quisquam nisi? Totam debitis quas non minus
-            obcaecati molestias. Nobis blanditiis commodi mollitia voluptatibus?
+            Let’s chat! Whether it’s about a project, an idea, or your favorite
+            cat meme, I’d love to hear from you. I’m always open to new
+            collaborations and creative challenges that spark something fun💬
           </p>
           <form
             action="https://formsubmit.co/dinaseptypuspayani87@gmail.com"
@@ -385,7 +370,7 @@ function Home() {
             <input
               type="text"
               name="name"
-              placeholder="Nama"
+              placeholder="Name"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500"
             />
             <input
@@ -397,19 +382,19 @@ function Home() {
             <input
               type="text"
               name="subject"
-              placeholder="Subjek"
+              placeholder="Subject"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2"
             />
             <textarea
               name="message"
-              placeholder="Pesan"
+              placeholder="Message"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2 h-32 resize-none"
             ></textarea>
             <button
               type="submit"
               className="bg-blue-700 p-4 rounded-2xl hover:bg-blue-600 lg:col-span-2"
             >
-              Kirim Pesan
+              Send Message
             </button>
           </form>
         </div>

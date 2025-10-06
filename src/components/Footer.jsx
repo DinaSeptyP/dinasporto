@@ -35,10 +35,8 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold text-white mb-4">Dina Septy P.</h2>
           <p className="text-sm leading-relaxed text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-            aspernatur harum, quasi fugiat tempora obcaecati provident assumenda
-            veritatis delectus hic, saepe temporibus impedit. Incidunt facere
-            qui beatae deleniti ullam totam? 🌸
+            Built with curiosity, care, and way too much rock music🐾 Thanks for
+            stopping by, I hope something here made you smile!! 🌻🌸
           </p>
         </div>
 
@@ -51,7 +49,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("home")}
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors cursor-pointer"
               >
                 Home
               </button>
@@ -59,7 +57,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("about")}
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors cursor-pointer"
               >
                 About
               </button>
@@ -68,7 +66,7 @@ const Footer = () => {
               <button
                 onClick={() => handleNavClick("tool")}
                 href="#tool"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors cursor-pointer"
               >
                 Tools
               </button>
@@ -76,7 +74,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("project")}
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors cursor-pointer"
               >
                 Projects
               </button>
@@ -84,7 +82,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("contact")}
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors cursor-pointer"
               >
                 Contact
               </button>
@@ -122,7 +120,8 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className="border-t border-zinc-800 text-center py-4 text-sm text-zinc-500">
-        © {year} Dina Septy P. — Crafted with ❤️ using React & TailwindCSS
+        © {year} Dina Septy Puspayani — Crafted with ❤️ using React &
+        TailwindCSS
       </div>
     </footer>
   );
