@@ -60,7 +60,7 @@ const Navbar = () => {
     <div
       className={`navbar flex items-center justify-between md:sticky md:top-0 z-50 px-4 md:px-0 transition-all duration-300 ${
         active
-          ? "justify-center text-white shadow-lg pt-0"
+          ? "justify-center text-white pt-0"
           : "md:bg-transparent md:text-white md:shadow-none text-black pt-7"
       }`}
     >
