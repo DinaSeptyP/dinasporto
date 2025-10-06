@@ -25,17 +25,16 @@ function Home() {
             <q>Let’s build websites that spark a little joy😻</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
-            Curiosity leads, code follows — Hii, I’m Dina!!
+            Curiosity leads, code follows — I’m Dina!!
           </h1>
           <p className="mb-6 opacity-70 text-base/loose">
             I’m a Frontend Developer who takes on Full Stack work from time to
             time when needed. I care deeply about how people feel when they use
-            a website, such as smooth flow, clear visuals, and little details
-            that make everything just work. I love learning new tools,
-            experimenting with fresh ideas, and sometimes spending too long
-            tweaking pixels until they feel right. When I’m not coding, you’ll
-            probably find me playing with cats, stargazing, watching movies or
-            cat memes, or getting lost in a good playlist. 🎧🎸✨
+            a website. I love learning new tools, experimenting with fresh
+            ideas, and sometimes spending too long tweaking pixels until they
+            feel right. When I’m not coding, you’ll probably find me playing
+            with cats, stargazing, watching movies or cat memes, or getting lost
+            in a good playlist. 🎧🎸✨
           </p>
           <div className="flex gap-4 items-center">
             <a
@@ -60,7 +59,7 @@ function Home() {
       </div>
 
       {/* ABOUT */}
-      <div className="about mt-32 py-10" id="about"></div>
+      <div className="about mt-32 py-5" id="about"></div>
       <div
         className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg"
         data-aos="fadeInUp"
@@ -165,7 +164,7 @@ function Home() {
 
       {/* TOOLS */}
 
-      <div className="tools mt-32" id="tool">
+      <div className="tools mt-44 py-3" id="tool">
         <h1
           className="text-4xl/snug font-bold mb-4"
           data-aos="fadeInUp"
@@ -185,7 +184,7 @@ function Home() {
           screen.
         </p>
         <div
-          className="tools-box mt-14 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4"
+          className="tools-box mt-10 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4"
           data-aos="fadeInUp"
           data-aos-duration="1000"
           data-aos-once="true"
@@ -216,10 +215,10 @@ function Home() {
       {/* Tentang */}
 
       <div className="projects mt-32" id="project"></div>
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
-        <div>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
+        <div className="lg:max-w-2xl">
           <h1
-            className="text-4xl/snug font-bold mb-4"
+            className="text-4xl font-bold mb-3"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -228,7 +227,7 @@ function Home() {
             My Projects
           </h1>
           <p
-            className="opacity-70 text-base/loose md:w-2/3"
+            className="opacity-70 text-base leading-relaxed"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -236,20 +235,25 @@ function Home() {
           >
             Every project teaches me something new about design, logic, or just
             how people use the web. Here are some of the projects I’ve poured my
-            time (and a few playlists) into🎧
+            time (and a few playlists) into 🎧
           </p>
         </div>
-        <a
-          href="https://github.com/DinaSeptyP"
-          target="_blank"
-          className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-sm/loose text-center md:w-1/7 w-full md:text-md"
+
+        <div
+          className="flex lg:block"
           data-aos="fadeInUp"
           data-aos-duration="1000"
-          data-aos-delay="200"
+          data-aos-delay="400"
           data-aos-once="true"
         >
-          Github Page
-        </a>
+          <a
+            href="https://github.com/DinaSeptyP"
+            target="_blank"
+            className="bg-zinc-800 text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-zinc-700 transition-colors w-full sm:w-auto text-center"
+          >
+            View GitHub
+          </a>
+        </div>
       </div>
 
       <div className="projects-box grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
@@ -290,7 +294,7 @@ function Home() {
                     rel="noopener noreferrer"
                     className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700"
                   >
-                    GitHub
+                    GitHub - BE
                   </a>
                 )}
 
@@ -301,7 +305,7 @@ function Home() {
                     rel="noopener noreferrer"
                     className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700"
                   >
-                    GitHub 2
+                    GitHub - FE
                   </a>
                 )}
 
@@ -372,23 +376,27 @@ function Home() {
               name="name"
               placeholder="Name"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500"
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500"
+              required
             />
             <input
               type="text"
               name="subject"
               placeholder="Subject"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2"
+              required
             />
             <textarea
               name="message"
               placeholder="Message"
               className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2 h-32 resize-none"
+              required
             ></textarea>
             <button
               type="submit"

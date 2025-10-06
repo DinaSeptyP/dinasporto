@@ -22,13 +22,23 @@ const Navbar = () => {
   }, []);
 
   const handleNavClick = (id) => {
-    if (location.pathname !== "/") {
-      navigate("/#" + id);
-    } else {
+    const scrollToSection = () => {
       const section = document.getElementById(id);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        const offset = -120;
+        const top =
+          section.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToSection, 400);
+    } else {
+      scrollToSection();
     }
   };
 
@@ -43,14 +53,22 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div className="navbar flex items-center justify-between py-7">
+    <div
+      className={`navbar flex items-center justify-between py-7 md:sticky md:top-0 z-50 rounded-4xl px-4 md:px-0 transition-all duration-300`}
+    >
       <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white md:static rounded-lg shadow-lg md:shadow-none">
+        <h1
+          className={`text-3xl font-bold p-1 rounded-lg transition-all duration-300 ${
+            active
+              ? "bg-white text-black shadow-lg hidden"
+              : "md:bg-transparent md:text-white md:shadow-none bg-white text-black"
+          }`}
+        >
           Dina
         </h1>
       </div>
       <ul
-        className={`menu flex sm:gap-10 gap-4 items-center fixed md:static left-1/2 -translate-x-1/2 md:translate-x-0 md:opacity-100 md:top-0 rounded-lg shadow-lg bg-white/30 backdrop-blur-xl p-4 rounded-br-2xl z-100 ${
+        className={`menu flex sm:gap-10 gap-4 items-center fixed md:static left-1/2 -translate-x-1/2 md:translate-x-0 md:opacity-100 md:top-0 rounded-lg shadow-lg bg-white/30 backdrop-blur-3xl p-4 rounded-br-2xl z-100 ${
           active ? "top-0 opacity-100" : "-top-10 opacity-0"
         } transition-all duration-300 md:bg-transparent`}
       >

@@ -25,7 +25,7 @@ export default function ProjectDetail() {
   return (
     <div className="p-5 max-w-5xl mx-auto">
       <button
-        onClick={() => navigate(-1)} // 👈 ini yang bikin efek "go back"
+        onClick={() => navigate(-1)}
         className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-white mb-6 inline-block text-xs md:text-sm lg:text-md"
       >
         ← Back to projects
