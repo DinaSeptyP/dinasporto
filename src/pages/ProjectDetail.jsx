@@ -1,10 +1,21 @@
 // pages/ProjectDetail.jsx
-import { useParams } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { listProyek } from "../data";
 
 export default function ProjectDetail() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
   const { id } = useParams();
+  const navigate = useNavigate();
   const proyek = listProyek.find((item) => item.id === parseInt(id));
 
   if (!proyek) {
@@ -13,12 +24,12 @@ export default function ProjectDetail() {
 
   return (
     <div className="p-5 max-w-5xl mx-auto">
-      <Link
-        to="/"
+      <button
+        onClick={() => navigate(-1)} // 👈 ini yang bikin efek "go back"
         className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-white mb-6 inline-block text-xs md:text-sm lg:text-md"
       >
         ← Back to projects
-      </Link>
+      </button>
       <img
         src={proyek.gambar}
         alt={proyek.nama}

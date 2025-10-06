@@ -1,12 +1,28 @@
 import DataImage, { listProyek } from "./data";
 import { listTools } from "./data";
 import { timelineExperience } from "./data";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProjectDetail from "./pages/ProjectDetail";
 import Footer from "./components/Footer";
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
   return (
     <>
       {/* HERO */}
