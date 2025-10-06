@@ -64,7 +64,7 @@ export default function ProjectDetail() {
         ))}
       </ul>
       <h3 className="text-xl font-semibold mb-2">Pages / Features:</h3>
-      <ul className="list-disc list-inside mb-6">
+      <ul className="list-disc pl-5 mb-4">
         {proyek.features?.map((feature, i) => (
           <li key={i}>{feature}</li>
         ))}

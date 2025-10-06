@@ -216,7 +216,7 @@ function Home() {
       {/* Tentang */}
 
       <div className="projects mt-32" id="project"></div>
-      <div className="flex items-center justify-between mb-10">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
         <div>
           <h1
             className="text-4xl/snug font-bold mb-4"
@@ -228,7 +228,7 @@ function Home() {
             My Projects
           </h1>
           <p
-            className="w-2/3 opacity-70 text-base/loose"
+            className="opacity-70 text-base/loose md:w-2/3"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -242,7 +242,7 @@ function Home() {
         <a
           href="https://github.com/DinaSeptyP"
           target="_blank"
-          className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-sm/loose w-2/7 md:w-1/7 text-center md:text-md"
+          className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 text-sm/loose text-center md:w-1/7 w-full md:text-md"
           data-aos="fadeInUp"
           data-aos-duration="1000"
           data-aos-delay="200"
