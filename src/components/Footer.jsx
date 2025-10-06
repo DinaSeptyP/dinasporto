@@ -7,13 +7,23 @@ const Footer = () => {
   const location = useLocation();
 
   const handleNavClick = (id) => {
-    if (location.pathname !== "/") {
-      navigate("/#" + id);
-    } else {
+    const scrollToSection = () => {
       const section = document.getElementById(id);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        const offset = -120;
+        const top =
+          section.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToSection, 400);
+    } else {
+      scrollToSection();
     }
   };
 
@@ -26,6 +36,7 @@ const Footer = () => {
       }
     }
   }, [location]);
+
   const year = new Date().getFullYear();
 
   return (
