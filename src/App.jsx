@@ -11,7 +11,7 @@ function Home() {
     <>
       {/* HERO */}
       <div
-        className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 sm:gap-10 gap-6 grid-cols-1"
+        className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 sm:gap-6 gap-6 grid-cols-1"
         id="home"
       >
         <div className="animate__animated animate__fadeInLeft animate__delay-1s">
@@ -24,17 +24,15 @@ function Home() {
             ></img>
             <q>Let’s build websites that spark a little joy😻</q>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">
-            Curiosity leads, code follows — I’m Dina!!
-          </h1>
+          <h1 className="text-5xl/tight font-bold mb-6">Hai, I’m Dina!!</h1>
           <p className="mb-6 opacity-70 text-base/loose">
-            I’m a Frontend Developer who takes on Full Stack work from time to
-            time when needed. I care deeply about how people feel when they use
-            a website. I love learning new tools, experimenting with fresh
-            ideas, and sometimes spending too long tweaking pixels until they
-            feel right. When I’m not coding, you’ll probably find me playing
-            with cats, stargazing, watching movies or cat memes, or getting lost
-            in a good playlist. 🎧🎸✨
+            I’m a <span className="font-extrabold">Frontend Developer </span>
+            who takes on Full Stack work from time to time when needed. I care
+            deeply about how people feel when they use a website. I love
+            learning new tools, experimenting with fresh ideas, and sometimes
+            spending too long tweaking pixels until they feel right. When I’m
+            not coding, you’ll probably find me with cats, stargazing, watching
+            movies & cat memes, or getting lost in a good playlist 🎧🎸
           </p>
           <div className="flex gap-4 items-center">
             <a
@@ -72,7 +70,7 @@ function Home() {
           className="w-12 rounded-md sm:hidden mb-10"
         />
         <h1 className="text-3xl font-bold mb-6">About Me</h1>
-        <p className="mb-6 opacity-70 text-base/loose">
+        <p className="mb-6 opacity-70 text-base/loose text-justify">
           Hi! I’m Dina Septy Puspayani, a web developer and tech enthusiast from
           Indonesia. I love building things that look good and feel good to use
           like clean layouts, intuitive flow, and just the right amount of
@@ -80,6 +78,7 @@ function Home() {
           navigate and more enjoyable to explore. I also love exploring new
           ideas and learning along the way. To me, good design and good code go
           hand in hand, both tell a story about how something feels to use.
+          'Cause when curiosity leads, code follows~
         </p>
         <div className="flex items-center justify-between">
           <img
@@ -164,9 +163,9 @@ function Home() {
 
       {/* TOOLS */}
 
-      <div className="tools mt-44 py-3" id="tool">
+      <div className="tools mt-48 py-3" id="tool">
         <h1
-          className="text-4xl/snug font-bold mb-4"
+          className="text-4xl/snug font-bold"
           data-aos="fadeInUp"
           data-aos-duration="1000"
           data-aos-once="true"
@@ -214,7 +213,7 @@ function Home() {
 
       {/* Tentang */}
 
-      <div className="projects mt-32" id="project"></div>
+      <div className="projects mt-36" id="project"></div>
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
         <div className="lg:max-w-2xl">
           <h1
@@ -233,9 +232,9 @@ function Home() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Every project teaches me something new about design, logic, or just
-            how people use the web. Here are some of the projects I’ve poured my
-            time (and a few playlists) into 🎧
+            Every project teaches me something about design, logic, or just how
+            people use the web. Here are some of the projects I’ve poured my
+            time (and a few playlists) into.
           </p>
         </div>
 
@@ -358,9 +357,9 @@ function Home() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Let’s chat! Whether it’s about a project, an idea, or your favorite
-            cat meme, I’d love to hear from you. I’m always open to new
-            collaborations and creative challenges that spark something fun💬
+            Let’s chat! Whether it’s about a project, an idea, or anything, I’d
+            love to hear from you. I’m always open to new collaborations and
+            creative challenges that spark something fun✌️😄
           </p>
           <form
             action="https://formsubmit.co/dinaseptypuspayani87@gmail.com"

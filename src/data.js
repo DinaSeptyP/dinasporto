@@ -104,6 +104,22 @@ export const listTools = [
     ket: "UI/UX Design Tool",
     dad: "1200",
   },
+  {
+    id: 13,
+    gambar:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+    nama: "Postman",
+    ket: "API Testing Tool",
+    dad: "1300",
+  },
+  {
+    id: 14,
+    gambar:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    nama: "MySQL",
+    ket: "Database",
+    dad: "1400",
+  },
 ];
 
 import Proyek1 from "/assets/proyek/project1.jpg";

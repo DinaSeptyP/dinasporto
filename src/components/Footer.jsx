@@ -46,7 +46,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold text-white mb-4">Dina Septy P.</h2>
           <p className="text-sm leading-relaxed text-zinc-400">
-            Built with curiosity, care, and way too much rock music🐾 Thanks for
+            Built with curiosity, care, and way too much rock music. Thanks for
             stopping by, I hope something here made you smile!! 🌻🌸
           </p>
         </div>
