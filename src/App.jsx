@@ -55,6 +55,7 @@ function Home() {
           className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-2s"
         />
       </div>
+      {/* HERO */}
 
       {/* ABOUT */}
       <div className="about mt-32 py-5" id="about"></div>
@@ -102,7 +103,9 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* ABOUT */}
 
+      {/* TIMELINE */}
       <div
         className="w-full max-w-4xl mx-auto py-12 relative"
         data-aos="fadeInUp"
@@ -160,9 +163,9 @@ function Home() {
           ))}
         </div>
       </div>
+      {/* TIMELINE */}
 
       {/* TOOLS */}
-
       <div className="tools mt-48 py-3" id="tool">
         <h1
           className="text-4xl/snug font-bold"
@@ -210,9 +213,9 @@ function Home() {
           ))}
         </div>
       </div>
+      {/* TOOLS */}
 
-      {/* Tentang */}
-
+      {/* PROJECT */}
       <div className="projects mt-36" id="project"></div>
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
         <div className="lg:max-w-2xl">
@@ -330,6 +333,7 @@ function Home() {
           </div>
         ))}
       </div>
+      {/* PROJECT */}
 
       {/* CONTACT */}
       <div
@@ -406,6 +410,7 @@ function Home() {
           </form>
         </div>
       </div>
+      {/* CONTACT */}
     </>
   );
 }
