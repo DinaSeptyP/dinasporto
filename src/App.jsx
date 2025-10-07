@@ -58,7 +58,7 @@ function Home() {
       {/* HERO */}
 
       {/* ABOUT */}
-      <div className="about mt-32 py-5" id="about"></div>
+      <div className="about mt-40 py-5" id="about"></div>
       <div
         className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg"
         data-aos="fadeInUp"
