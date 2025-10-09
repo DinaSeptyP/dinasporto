@@ -236,8 +236,8 @@ function Home() {
             data-aos-once="true"
           >
             Every project teaches me something about design, logic, or just how
-            people use the web. Here are some of the projects I’ve poured my
-            time (and a few playlists) into.
+            people use the website. Here are some of the projects I’ve poured my
+            time and effort into.
           </p>
         </div>
 
