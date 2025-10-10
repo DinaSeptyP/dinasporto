@@ -40,12 +40,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 border-t border-zinc-700 bg-zinc-900 text-zinc-300">
+    <footer className="mt-20 border-t border-zinc-300 dark:border-zinc-700 bg-zinc-200 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-300 transition-colors duration-300 px-4">
       <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
         {/* Brand / About */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-4">Dina Septy P.</h2>
-          <p className="text-sm leading-relaxed text-zinc-400">
+          <h2 className="text-2xl font-bold mb-4">Dina Septy P.</h2>
+          <p className="text-sm leading-relaxed">
             Built with curiosity, care, and way too much rock music. Thanks for
             stopping by, I hope something here made you smile!! 🌻🌸
           </p>
@@ -53,14 +53,12 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold text-white mb-4">
-            Quick Navigation
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">Quick Navigation</h3>
           <ul className="space-y-2">
             <li>
               <button
                 onClick={() => handleNavClick("home")}
-                className="hover:text-white transition-colors cursor-pointer"
+                className="hover:text-black dark:hover:text-white transition-colors cursor-pointer"
               >
                 Home
               </button>
@@ -68,7 +66,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("about")}
-                className="hover:text-white transition-colors cursor-pointer"
+                className="hover:text-black dark:hover:text-white transition-colors cursor-pointer"
               >
                 About
               </button>
@@ -76,8 +74,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("tool")}
-                href="#tool"
-                className="hover:text-white transition-colors cursor-pointer"
+                className="hover:text-black dark:hover:text-white transition-colors cursor-pointer"
               >
                 Tools
               </button>
@@ -85,7 +82,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("project")}
-                className="hover:text-white transition-colors cursor-pointer"
+                className="hover:text-black dark:hover:text-white transition-colors cursor-pointer"
               >
                 Projects
               </button>
@@ -93,7 +90,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => handleNavClick("contact")}
-                className="hover:text-white transition-colors cursor-pointer"
+                className="hover:text-black dark:hover:text-white transition-colors cursor-pointer"
               >
                 Contact
               </button>
@@ -103,7 +100,7 @@ const Footer = () => {
 
         {/* Socials */}
         <div>
-          <h3 className="text-xl font-semibold text-white mb-4">Connect</h3>
+          <h3 className="text-xl font-semibold mb-4">Connect</h3>
           <div className="flex gap-4">
             <a
               href="https://www.linkedin.com/in/dina-septy-puspayani/"
@@ -115,7 +112,7 @@ const Footer = () => {
             <a
               href="https://github.com/DinaSeptyP"
               target="_blank"
-              className="hover:text-gray-100 transition-colors"
+              className="hover:text-gray-700 dark:hover:text-gray-100 transition-colors"
             >
               <i className="ri-github-fill text-3xl"></i>
             </a>
@@ -130,7 +127,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom line */}
-      <div className="border-t border-zinc-800 text-center py-4 text-sm text-zinc-500">
+      <div className="border-t border-zinc-300 dark:border-zinc-800 text-center py-4 text-sm text-zinc-700 dark:text-zinc-500">
         © {year} Dina Septy Puspayani — Crafted with ❤️ using React &
         TailwindCSS
       </div>

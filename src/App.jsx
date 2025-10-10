@@ -15,7 +15,7 @@ function Home() {
         id="home"
       >
         <div className="animate__animated animate__fadeInLeft animate__delay-1s">
-          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+          <div className="flex items-center gap-3 mb-6 bg-zinc-300 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 w-fit p-4 rounded-2xl transition-colors duration-500">
             <img
               src={DataImage.HeroImage}
               alt="Hero Background"
@@ -25,7 +25,7 @@ function Home() {
             <q>Let’s build websites that spark a little joy😻</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hai, I’m Dina!!</h1>
-          <p className="mb-6 opacity-70 text-base/loose">
+          <p className="mb-6 opacity-80 text-base/loose text-zinc-700 dark:text-zinc-300 transition-colors duration-500">
             I’m a <span className="font-extrabold">Frontend Developer </span>
             who takes on Full Stack work from time to time when needed. I care
             deeply about how people feel when they use a website. I love
@@ -37,13 +37,13 @@ function Home() {
           <div className="flex gap-4 items-center">
             <a
               href="https://www.linkedin.com/in/dina-septy-puspayani/"
-              className="bg-blue-700 p-4 rounded-2xl hover:bg-blue-600 sm:gap-4 gap-2 flex items-center justify-center"
+              className="bg-blue-700 dark:bg-blue-600 p-4 rounded-2xl hover:bg-blue-600 dark:hover:bg-blue-500 sm:gap-4 gap-2 flex items-center justify-center text-white"
             >
               LinkedIn
             </a>
             <a
               href="#project"
-              className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
+              className="bg-zinc-700 dark:bg-zinc-300 text-zinc-100 dark:text-zinc-900 p-4 rounded-2xl hover:bg-zinc-600 dark:hover:bg-zinc-200 transition-colors duration-500"
             >
               Project
             </a>
@@ -59,19 +59,14 @@ function Home() {
 
       {/* ABOUT */}
       <div className="about mt-40 py-5" id="about"></div>
-      <div
-        className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg"
-        data-aos="fadeInUp"
-        data-aos-duration="1000"
-        data-aos-once="true"
-      >
+      <div className="xl:w-2/3 lg:w-full mx-auto p-7 bg-zinc-200 dark:bg-zinc-800 rounded-lg transition-colors duration-500">
         <img
           src={DataImage.HeroImage}
           alt="About Image"
           className="w-12 rounded-md sm:hidden mb-10"
         />
         <h1 className="text-3xl font-bold mb-6">About Me</h1>
-        <p className="mb-6 opacity-70 text-base/loose text-justify">
+        <p className="mb-6 opacity-70 text-base/loose text-justify text-zinc-900 dark:text-zinc-100">
           Hi! I’m Dina Septy Puspayani, a web developer and tech enthusiast from
           Indonesia. I love building things that look good and feel good to use
           like clean layouts, intuitive flow, and just the right amount of
@@ -87,16 +82,16 @@ function Home() {
             alt="About Image"
             className="w-12 rounded-md sm:block hidden"
           />
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 text-zinc-800 dark:text-zinc-100 transition-colors duration-500">
             <div>
               <h1 className="text-3xl font-bold mb-1">
-                20<span className="text-blue-500">+</span>
+                20<span className="text-blue-500 dark:text-blue-600">+</span>
               </h1>
               <p>Projects built</p>
             </div>
             <div>
               <h1 className="text-3xl font-bold mb-1">
-                10<span className="text-blue-500">+</span>
+                10<span className="text-blue-500 dark:text-blue-600">+</span>
               </h1>
               <p>Team Collaborations</p>
             </div>
@@ -130,13 +125,13 @@ function Home() {
                 <>
                   <div className="w-1/2 pr-6 text-right">
                     <h3 className="font-semibold">{experience.title}</h3>
-                    <p className="text-sm text-gray-200">
+                    <p className="text-sm text-gray-700 dark:text-gray-200">
                       {experience.subtitle}
                     </p>
-                    <span className="text-sm text-gray-400">
+                    <span className="text-sm text-gray-500 dark:text-gray-400">
                       {experience.date}
                     </span>
-                    <p className="mt-1 text-xs text-gray-300">
+                    <p className="mt-1 text-xs text-gray-600 dark:text-gray-300">
                       {experience.skill}
                     </p>
                   </div>
@@ -147,13 +142,13 @@ function Home() {
                   <div className="w-1/2"></div>
                   <div className="w-1/2 pl-6 text-left">
                     <h3 className="font-semibold">{experience.title}</h3>
-                    <p className="text-sm text-gray-200">
+                    <p className="text-sm text-gray-700 dark:text-gray-200">
                       {experience.subtitle}
                     </p>
-                    <span className="text-sm text-gray-400">
+                    <span className="text-sm text-gray-500 dark:text-gray-400">
                       {experience.date}
                     </span>
-                    <p className="mt-1 text-xs text-gray-300">
+                    <p className="mt-1 text-xs text-gray-600 dark:text-gray-300">
                       {experience.skill}
                     </p>
                   </div>
@@ -194,7 +189,7 @@ function Home() {
           {listTools.map((tool) => (
             <div
               key={tool.id}
-              className="group flex items-center gap-4 p-4 rounded-md border border-zinc-600 hover:bg-zinc-800 cursor-pointer"
+              className="group flex items-center gap-4 p-4 rounded-md border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-200 dark:hover:bg-zinc-800 cursor-pointer transition-colors duration-300"
               data-aos="fadeInUp"
               data-aos-duration="1000"
               data-aos-delay={tool.dad}
@@ -203,7 +198,7 @@ function Home() {
               <img
                 src={tool.gambar}
                 alt="Tools Image"
-                className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                className="w-14 bg-zinc-200 dark:bg-zinc-800 p-1 group-hover:bg-zinc-300 dark:group-hover:bg-zinc-900 transition-colors duration-300"
               ></img>
               <div>
                 <h4>{tool.nama}</h4>
@@ -262,7 +257,7 @@ function Home() {
         {listProyek.map((proyek) => (
           <div
             key={proyek.id}
-            className="group rounded-lg overflow-hidden border border-zinc-600 hover:shadow-lg cursor-pointer pb-5"
+            className="group rounded-lg overflow-hidden border border-zinc-300 dark:border-zinc-700 hover:shadow-lg cursor-pointer pb-5 pb-2"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay={proyek.dad}
@@ -273,7 +268,7 @@ function Home() {
               alt={proyek.nama}
               className="w-full object-cover group-hover:scale-105 transition-all duration-300"
             />
-            <div className="p-4">
+            <div className="p-5">
               <h3 className="text-xl font-bold mb-2">{proyek.nama}</h3>
               <p className="mb-4 opacity-70 text-sm/loose">{proyek.desk}</p>
 
@@ -281,7 +276,7 @@ function Home() {
                 {proyek.tools.map((tool, index) => (
                   <span
                     key={index}
-                    className="bg-zinc-800 px-3 py-1 rounded-full text-sm"
+                    className="px-3 py-1 rounded-full text-sm bg-zinc-200 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100 transition-colors duration-300"
                   >
                     {tool}
                   </span>
@@ -344,9 +339,9 @@ function Home() {
         data-aos-delay="200"
         data-aos-once="true"
       >
-        <div className="xl:w-2/3 lg:full mx-auto p-7 bg-zinc-800 rounded-lg">
+        <div className="xl:w-2/3 lg:w-full mx-auto p-7 bg-zinc-200 dark:bg-zinc-800 rounded-lg transition-colors duration-500">
           <h1
-            className="text-3xl font-bold mb-6"
+            className="text-3xl font-bold mb-6 text-zinc-800 dark:text-zinc-100 transition-colors duration-500"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -355,7 +350,7 @@ function Home() {
             Contact Me
           </h1>
           <p
-            className="mb-6 opacity-70 text-base/loose"
+            className="mb-6 text-zinc-700 dark:text-zinc-300 opacity-70 text-base/loose transition-colors duration-500"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -368,7 +363,7 @@ function Home() {
           <form
             action="https://formsubmit.co/dinaseptypuspayani87@gmail.com"
             method="POST"
-            className="grid lg:grid-cols-2 grid-cols-1 gap-6 text-zinc-100"
+            className="grid lg:grid-cols-2 grid-cols-1 gap-6 text-zinc-800 dark:text-zinc-100 transition-colors duration-500"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay="400"
@@ -378,32 +373,32 @@ function Home() {
               type="text"
               name="name"
               placeholder="Name"
-              className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500"
+              className="bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 p-4 rounded-lg border border-zinc-300 dark:border-zinc-600 focus:outline-none focus:border-blue-500 transition-colors duration-500"
               required
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
-              className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500"
+              className="bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 p-4 rounded-lg border border-zinc-300 dark:border-zinc-600 focus:outline-none focus:border-blue-500 transition-colors duration-500"
               required
             />
             <input
               type="text"
               name="subject"
               placeholder="Subject"
-              className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2"
+              className="bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 p-4 rounded-lg border border-zinc-300 dark:border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2"
               required
             />
             <textarea
               name="message"
               placeholder="Message"
-              className="bg-zinc-700 p-4 rounded-lg border border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2 h-32 resize-none"
+              className="bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 p-4 rounded-lg border border-zinc-300 dark:border-zinc-600 focus:outline-none focus:border-blue-500 lg:col-span-2 h-32 resize-none"
               required
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-700 p-4 rounded-2xl hover:bg-blue-600 lg:col-span-2"
+              className="bg-blue-700 hover:bg-blue-600 dark:bg-blue-500 dark:hover:bg-blue-400 text-white p-4 rounded-2xl lg:col-span-2 transition-colors duration-500"
             >
               Send Message
             </button>
@@ -423,7 +418,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
-      <Footer />
     </>
   );
 }

@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer.jsx";
 
 AOS.init();
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
       <div className="container mx-auto px-4">
         <App />
       </div>
+      <Footer />
     </BrowserRouter>
   </StrictMode>
 );

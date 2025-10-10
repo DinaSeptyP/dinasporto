@@ -58,18 +58,18 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar flex items-center justify-between md:sticky md:top-0 z-50 px-4 md:px-0 transition-all duration-300 ${
+      className={`navbar flex items-center justify-between md:sticky md:top-0 z-50 md:px-0 transition-all duration-300 ${
         active
-          ? "justify-center text-white pt-0"
-          : "md:bg-transparent md:text-white md:shadow-none text-black pt-7"
+          ? "justify-center text-black dark:text-white pt-0"
+          : "md:bg-transparent dark:md:text-white md:shadow-none pt-7"
       }`}
     >
       <div className="logo">
         <h1
           className={`text-3xl font-bold p-1 rounded-lg transition-all duration-300 ${
             active
-              ? "bg-white text-black shadow-lg hidden"
-              : "md:bg-transparent md:text-white md:shadow-none bg-white text-black"
+              ? "shadow-lg hidden dark:bg-white dark:text-black bg-black text-white"
+              : "md:bg-transparent dark:md:text-white md:text-black md:shadow-none dark:bg-none shadow-lg"
           }`}
         >
           Dina
