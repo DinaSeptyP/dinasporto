@@ -17,7 +17,6 @@ createRoot(document.getElementById("root")).render(
       <div className="container mx-auto px-4">
         <App />
       </div>
-      <Footer />
     </BrowserRouter>
   </StrictMode>
 );

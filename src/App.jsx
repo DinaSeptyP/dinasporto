@@ -257,7 +257,7 @@ function Home() {
         {listProyek.map((proyek) => (
           <div
             key={proyek.id}
-            className="group rounded-lg overflow-hidden border border-zinc-300 dark:border-zinc-700 hover:shadow-lg cursor-pointer pb-5 pb-2"
+            className="group rounded-lg overflow-hidden border border-zinc-300 dark:border-zinc-700 hover:shadow-lg cursor-pointer pb-5 pt-0"
             data-aos="fadeInUp"
             data-aos-duration="1000"
             data-aos-delay={proyek.dad}
@@ -418,6 +418,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
+      <Footer />
     </>
   );
 }

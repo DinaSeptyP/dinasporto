@@ -40,7 +40,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 border-t border-zinc-300 dark:border-zinc-700 bg-zinc-200 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-300 transition-colors duration-300 px-4">
+    <footer className="mt-20 border-t border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-300 transition-colors duration-300 px-4">
       <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
         {/* Brand / About */}
         <div>
