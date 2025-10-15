@@ -361,7 +361,7 @@ function Home() {
             creative challenges that spark something fun✌️😄
           </p>
           <form
-            action="https://formsubmit.co/dinaseptypuspayani87@gmail.com"
+            action="https://formsubmit.co/dspuspayani@gmail.com"
             method="POST"
             className="grid lg:grid-cols-2 grid-cols-1 gap-6 text-zinc-800 dark:text-zinc-100 transition-colors duration-500"
             data-aos="fadeInUp"
